@@ -18,7 +18,7 @@ $email = new PHPMailer();
  $email->SMTPSecure = false; // Define se é utilizado SSL/TLS - Mantenha o valor "false"
  $email->SMTPAutoTLS = true; // Define se, por padrão, será utilizado TLS - Mantenha o valor "false"
  
- $email->Username = 'site@vitalscheffer.com.br'; // Conta de email existente e ativa em seu domínio
+ $email->Username = 'profrenatocasagrande.com.br'; // Conta de email existente e ativa em seu domínio
  $email->Password = 'cp@fOglco'; // Senha da sua conta de email
 
 
@@ -102,7 +102,7 @@ function replace($palavra) {
 $name = $_POST['name'];
 $e_mail = $_POST['email'];
 $phone = $_POST['phone'];
-
+$mesagesafe = &_POST [mensagem your branding];
 
 $email->IsHTML(true); // Define que o e-mail será enviado como HTML
 $email->CharSet = 'utf-8'; // Charset da mensagem (opcional)
